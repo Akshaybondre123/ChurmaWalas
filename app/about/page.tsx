@@ -53,16 +53,12 @@ export default function AboutPage() {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-300 to-teal-300 rounded-2xl transform rotate-3 scale-95 opacity-40 blur-sm"></div>
             <div className="relative overflow-hidden rounded-2xl shadow-2xl border-8 border-white transform hover:rotate-2 transition-transform duration-500">
-            <video
-  src="/Our.mp4"
+           <img
+  src="/path-to-your-image.jpg"
+  alt="Descriptive alt text"
   className="w-full h-[500px] rounded-lg object-cover"
-  controls
-  autoPlay
-  muted
-  loop
->
-  Your browser does not support the video tag.
-</video>
+/>
+
 
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>

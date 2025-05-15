@@ -67,16 +67,11 @@ export default function ParallaxSection() {
                 transform: `translateY(${calculateParallax(-0.05)}px)`,
               }}
             >
-             <video
-  src="/Our.mp4"
+            <img
+  src="/path-to-your-image.jpg"
+  alt="Descriptive alt text"
   className="w-full h-[500px] rounded-lg object-cover"
-  controls
-  autoPlay
-  muted
-  loop
->
-  Your browser does not support the video tag.
-</video>
+/>
 
   
 
