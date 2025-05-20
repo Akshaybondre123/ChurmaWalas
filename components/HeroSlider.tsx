@@ -108,13 +108,14 @@ export default function HeroSlider() {
                     <Link href="/menu">View Our Menu</Link>
                   </Button>
                   <Button
-                    asChild
-                    size="lg"
-                    variant="outline"
-                    className="border-white text-white hover:bg-white/10 px-8 py-6 rounded-full text-lg"
-                  >
-                    <Link href="/contact#book">Book A Table</Link>
-                  </Button>
+  asChild
+  size="lg"
+  variant="outline"
+  className="border-white text-white hover:bg-white/10 px-8 py-6 rounded-full text-lg"
+>
+  <Link href="/contact#book">Book A Table</Link>
+</Button>
+
                 </div>
               </div>
             </div>

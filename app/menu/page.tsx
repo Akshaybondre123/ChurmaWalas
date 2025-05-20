@@ -369,7 +369,7 @@ const menuItems = {
       name: "Gulab Jamun",
       description: "Soft milk solids dumplings soaked in rose-flavored sugar syrup.",
       price: "₹450",
-      image: "/menu/MAK_4073.JPG",
+      image: "/menu/MAK_4073.jpg",
       isVeg: true,
       isSpicy: false,
     },

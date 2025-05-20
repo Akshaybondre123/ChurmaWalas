@@ -28,14 +28,15 @@ export default function PromoBanner() {
                   <span className="font-bold bg-white text-rose-600 px-2 py-0.5 rounded">WELCOME20</span>
                 </p>
                 <div className="mt-2 md:mt-0 md:inline-block md:ml-4">
-                  <Button
-                    asChild
-                    size="sm"
-                    variant="outline"
-                    className="border-white text-white hover:bg-white/20 text-xs md:text-sm"
-                  >
-                    <Link href="/menu">Order Now</Link>
-                  </Button>
+                 <Button
+  asChild
+  size="sm"
+  variant="outline"
+  className="border-rose-500 text-rose-700 hover:bg-rose-50 text-xs md:text-sm"
+>
+  <Link href="/menu">Order Now</Link>
+</Button>
+
                 </div>
               </div>
               <button
