@@ -15,34 +15,34 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const branches = [
   {
-    id: "jaipur",
-    name: "Jaipur - Main Branch",
-    address: "123 MI Road, Jaipur, Rajasthan 302001",
-    phone: "+91 98765 43210",
-    email: "jaipur@churmawalas.com",
+    id: "Sodala",
+    name: "Sodala - Jaipur Branch",
+    address: "opp metro piller number 104 shyam nagar new sanagner road sodala jaipur",
+    phone: "+91 89469 51963",
+    email: "Churmawalas@gmail.com",
     hours: "11:00 AM - 10:00 PM",
-    mapUrl: "https://maps.google.com",
-    image: "https://media.istockphoto.com/id/535168027/photo/beautiful-amber-fort-jaipur-india.jpg?s=612x612&w=0&k=20&c=eoZxEJzP9H8XGkCKwuBD-SvNAMFf5ubR9TUl_4Wzf8o=",
+    mapUrl: "https://maps.app.goo.gl/ZvwMyuGkX96atTgf8?g_st=iw",
+    image: "https://files.yappe.in/place/full/churma-walas-4593527.webp",
   },
   {
-    id: "udaipur",
-    name: "Udaipur Branch",
-    address: "45 Lake Palace Road, Udaipur, Rajasthan 313001",
-    phone: "+91 98765 43211",
-    email: "udaipur@churmawalas.com",
+    id: "VaishaliNagar",
+    name: "VaishaliNagar - Jaipur Branch",
+    address: " 1/465A girnar colony chitrakoot marg vaishali nagar jaipur",
+    phone: "+91 89469 51963",
+    email: "Churmawalas@gmail.com",
     hours: "11:00 AM - 10:00 PM",
-    mapUrl: "https://maps.google.com",
-    image: "https://media.istockphoto.com/id/1215274990/photo/lake-pichola-with-lake-palace-jag-niwas-in-udaipur-rajasthan-india.jpg?s=612x612&w=0&k=20&c=Uj9O_a3uRs8rkrHCMFDtG4VC_kJh2B_FUuZ0Zcwm5LI=",
+    mapUrl: "https://maps.app.goo.gl/n43Sfd1dKhmu8REU6?g_st=iw",
+    image: "/images/jaipur_vaishali.jpg",
   },
   {
-    id: "jodhpur",
-    name: "Jodhpur Branch",
-    address: "78 Clock Tower Market, Jodhpur, Rajasthan 342001",
-    phone: "+91 98765 43212",
-    email: "jodhpur@churmawalas.com",
+    id: "Jhotwara",
+    name: "Jhotwara - Jaipur Branch",
+    address: "shop no 6,7 raghunathpuri kalwar road near boring chouraha jhothwara jaipur",
+    phone: "+91 89469 51963",
+    email: "Churmawalas@gmail.com",
     hours: "11:00 AM - 10:00 PM",
-    mapUrl: "https://maps.google.com",
-    image: "https://media.istockphoto.com/id/1268291636/photo/mehrangarh-fort-jodhpur-rajasthan.jpg?s=612x612&w=0&k=20&c=Mm8L9u_ySRHC-j-U8SnlYwlygXJwwj2kAQKYxuKxwZE=",
+    mapUrl: "https://maps.app.goo.gl/n2bHhXtMYXu7CJJ46?g_st=iw",
+    image: "/images/branch.jpg",
   },
 ]
 
@@ -100,7 +100,7 @@ export default function ContactPage() {
       <div className="grid md:grid-cols-2 gap-12 items-start">
         <div>
           <h2 className="text-2xl font-bold mb-6 font-serif">Our Locations</h2>
-          <Tabs defaultValue="jaipur" className="w-full">
+          <Tabs defaultValue="Sodala" className="w-full">
            <TabsList className="w-full grid grid-cols-3 mb-6 bg-amber-100 rounded-lg shadow-sm">
   {branches.map((branch) => (
     <TabsTrigger

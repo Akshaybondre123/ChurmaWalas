@@ -2,14 +2,14 @@ import Link from "next/link"
 import Image from "next/image"
 
 import { Button } from "@/components/ui/button"
-import FoodShowcase from "@/components/food-showcase"
-import TestimonialSlider from "@/components/testimonial-slider"
-import HeroSlider from "@/components/hero-slider"
-import SpecialtySection from "@/components/specialty-section"
-import ParallaxSection from "@/components/parallax-section"
-import InstagramFeed from "@/components/instagram-feed"
-import PromoBanner from "@/components/promo-banner"
-import SimplifiedCateringSection from "@/components/simplified-catering-section"
+import FoodShowcase from "@/components/FoodShowcase"
+import TestimonialSlider from "@/components/TestimonialSlider"
+import HeroSlider from "@/components/HeroSlider"
+import SpecialtySection from "@/components/SpecialtySection"
+import ParallaxSection from "@/components/ParallaxSection"
+import InstagramFeed from "@/components/InstagramFeed"
+import PromoBanner from "@/components/PromoBanner"
+import SimplifiedCateringSection from "@/components/SimplifiedCateringSection"
 
 export default function Home() {
   return (

@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils"
 const slides = [
   {
     id: 1,
-    video: "/Churma4.mp4",
+    video: "/videos/Churma4.mp4",
     title: "Authentic Rajasthani Cuisine",
     subtitle: "Experience the Royal Flavors Since 1985",
     description:
@@ -17,7 +17,7 @@ const slides = [
   },
   {
     id: 2,
-    video: "/Churma.mp4",
+    video: "/videos/Churma.mp4",
     title: "Signature Daal Baati Churma",
     subtitle: "Our Award-Winning Specialty",
     description:
@@ -25,7 +25,7 @@ const slides = [
   },
   {
     id: 3,
-    video: "/Churma01.mp4",
+    video: "/videos/Churma01.mp4",
     title: "Elegant Dining Experience",
     subtitle: "Traditional Ambiance with Modern Comfort",
     description:

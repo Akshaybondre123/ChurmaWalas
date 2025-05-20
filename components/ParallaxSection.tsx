@@ -68,7 +68,7 @@ export default function ParallaxSection() {
               }}
             >
             <img
-  src="/path-to-your-image.jpg"
+  src="https://i.pinimg.com/736x/b1/7f/e9/b17fe94e579d0a27f31dae86e511a2b3.jpg"
   alt="Descriptive alt text"
   className="w-full h-[500px] rounded-lg object-cover"
 />

@@ -50,7 +50,7 @@ export default function SpecialtySection() {
           >
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10"></div>
             <Image
-              src="/MAK_4077.jpg"
+              src="/images/MAK_4077.jpg"
               alt="Traditional Recipes"
               width={500}
               height={600}

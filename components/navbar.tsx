@@ -112,7 +112,7 @@ export default function Navbar() {
             )}
           >
             <Image
-              src="/Logo.jpg"
+              src="/images/Logo.jpg"
               alt="Churma Wala's Logo"
               fill
               className="object-cover"

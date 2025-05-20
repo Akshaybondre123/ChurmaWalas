@@ -9,37 +9,37 @@ import { motion, useInView } from "framer-motion"
 const instagramPosts = [
   {
     id: 1,
-    video: "/VVV.mp4", // Add your video here (must be in /public)
+    video: "/videos/VVV.mp4", // Add your video here (must be in /public)
     likes: 312,
     comments: 27,
   },
   {
     id: 2,
-    video: "/V2.mp4",
+    video: "/videos/V2.mp4",
     likes: 245,
     comments: 18,
   },
   {
     id: 3,
-    video: "/V3.mp4",
+    video: "/videos/V3.mp4",
     likes: 189,
     comments: 12,
   },
   {
     id: 4,
-    video: "/V4.mp4",
+    video: "/videos/V4.mp4",
     likes: 302,
     comments: 24,
   },
   {
     id: 5,
-    video: "/V5.mp4",
+    video: "/videos/V5.mp4",
     likes: 276,
     comments: 31,
   },
   {
     id: 6,
-    video: "/Churma.mp4",
+    video: "/videos/Churma.mp4",
     likes: 198,
     comments: 15,
   },

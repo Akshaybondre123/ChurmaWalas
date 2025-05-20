@@ -57,29 +57,29 @@ const galleryItems = {
   restaurant: [
     {
       id: 7,
-      title: "Jaipur Branch Interior",
-      image: "/images/gallery/restaurant-1.png",
+      title: "opp metro piller number 104 shyam nagar new sanagner road sodala jaipur",
+      image: "/images/jaipur_vaishali.jpg",
       type: "image",
       likes: 156,
     },
     {
       id: 8,
-      title: "Udaipur Branch Exterior",
-      image: "/images/gallery/restaurant-2.png",
+      title: "1/465A girnar colony chitrakoot marg vaishali nagar jaipur",
+      image: "/images/branch.jpg",
       type: "image",
       likes: 178,
     },
     {
       id: 9,
-      title: "Private Dining Area",
-      image: "/images/gallery/restaurant-3.png",
+      title: "1/465A girnar colony chitrakoot marg vaishali nagar jaipur",
+      image: "https://files.yappe.in/place/full/churma-walas-4593527.webp",
       type: "image",
       likes: 203,
     },
     {
       id: 10,
       title: "Outdoor Seating",
-      image: "/images/gallery/restaurant-4.png",
+      image: "https://content.jdmagicbox.com/comp/jaipur/d4/0141px141.x141.190412131749.x4d4/catalogue/churma-walas-jaipur-0c0yjs6cbx.jpg",
       type: "image",
       likes: 167,
     },
@@ -88,21 +88,21 @@ const galleryItems = {
     {
       id: 11,
       title: "Rajasthani Food Festival",
-      image: "/RajaE.jpg",
+      image: "/images/RajaE.jpg",
       type: "image",
       likes: 234,
     },
     {
       id: 12,
       title: "Live Cooking Demonstration",
-      image: "/Cook.jpg",
+      image: "/images/Cook.jpg",
       type: "image",
       likes: 187,
     },
     {
       id: 13,
       title: "Traditional Dance Performance",
-      image: "/Dan.jpg",
+      image: "/images/Dan.jpg",
       type: "image",
       likes: 256,
     },
@@ -113,21 +113,21 @@ const galleryItems = {
       title: "Interiour",
       type: "video",
       videoUrl:
-        "/Churma01.mp4",
+        "/videos/Churma01.mp4",
     },
     {
       id: 15,
       title: "Chef's Special: Churma",
       type: "video",
       videoUrl:
-        "/V3.mp4",
+        "/videos/V3.mp4",
     },
     {
       id: 16,
       title: "Rajasthani Food",
       type: "video",
       videoUrl:
-        "/Churma.mp4",
+        "/videos/Churma.mp4",
     },
   ],
 }

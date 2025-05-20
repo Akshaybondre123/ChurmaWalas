@@ -43,22 +43,22 @@ export default function CateringPage() {
     {
       name: "Weddings",
       image:
-        "/CaterWedding.jpg",
+        "/images/CaterWedding.jpg",
     },
     {
       name: "Corporate Events",
       image:
-        "/Corporate.jpg",
+        "/images/Corporate.jpg",
     },
     {
       name: "Birthday Parties",
       image:
-        "/Birthday.jpg",
+        "/images/Birthday.jpg",
     },
     {
       name: "Religious Ceremonies",
       image:
-        "/Rituals.jpg",
+        "/images/Rituals.jpg",
     },
   ]
 
@@ -269,13 +269,13 @@ export default function CateringPage() {
                   className="bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 rounded-full px-8 py-6"
                 >
                   <Link
-                    href="https://www.swiggy.com"
+                    href="https://www.swiggy.com/menu/398956?source=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3"
                   >
                     <Image
-                      src="/Swiggy1.png"
+                      src="/images/Swiggy1.png"
                       alt="Swiggy"
                       width={100}
                       height={30}
@@ -289,7 +289,7 @@ export default function CateringPage() {
                   className="bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 rounded-full px-8 py-6"
                 >
                   <Link
-                    href="https://www.zomato.com"
+                    href="https://zomato.onelink.me/xqzv/sndsx7ek"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3"
@@ -458,7 +458,7 @@ export default function CateringPage() {
           className="bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 rounded-full"
         >
           <Link href="tel:+919876543210" className="flex items-center gap-2 justify-center text-white py-2 px-4">
-            <Phone className="h-5 w-5" /> +91 98765 43210
+            <Phone className="h-5 w-5" /> +91 8946951963
           </Link>
         </Button>
       </div>

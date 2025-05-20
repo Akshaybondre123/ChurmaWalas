@@ -47,7 +47,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-2 mb-6">
               <Image
-                src="/Logo.jpg"
+                src="/images/Logo.jpg"
                 alt="Churma Wala's Logo"
                 width={50}
                 height={50}
@@ -73,7 +73,7 @@ export default function Footer() {
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link
-                href="https://instagram.com"
+                href="https://www.instagram.com/churmawalas?igsh=MWY1dHk3MG92NmN5OA%3D%3D&utm_source=qr "
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-rose-800/50 to-amber-800/50 hover:from-rose-700 hover:to-amber-700 p-3 rounded-full transition-colors shadow-lg"
@@ -123,15 +123,17 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 mt-1 flex-shrink-0 text-rose-400" />
-                <span className="text-amber-100/80">123 MI Road, Jaipur, Rajasthan 302001</span>
+                <span className="text-amber-100/80"> 1/465A girnar colony chitrakoot marg vaishali nagar jaipur 
+
+</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 flex-shrink-0 text-rose-400" />
-                <span className="text-amber-100/80">+91 98765 43210</span>
+                <span className="text-amber-100/80">+91 7014093985</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 flex-shrink-0 text-rose-400" />
-                <span className="text-amber-100/80">info@churmawalas.com</span>
+                <span className="text-amber-100/80">Churmawalas@gmail.com</span>
               </li>
             </ul>
             <Button
@@ -148,16 +150,13 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex justify-between items-center">
                 <span className="text-amber-100/80">Monday - Friday</span>
-                <span className="text-rose-300 font-medium">11:00 AM - 10:00 PM</span>
+                <span className="text-rose-300 font-medium">10:00 AM - 11:00 PM</span>
               </li>
               <li className="flex justify-between items-center">
                 <span className="text-amber-100/80">Saturday - Sunday</span>
                 <span className="text-rose-300 font-medium">10:00 AM - 11:00 PM</span>
               </li>
-              <li className="flex justify-between items-center">
-                <span className="text-amber-100/80">Holidays</span>
-                <span className="text-rose-300 font-medium">10:00 AM - 11:00 PM</span>
-              </li>
+             
             </ul>
             <div className="mt-6 p-4 bg-gradient-to-r from-rose-800/30 to-amber-800/30 rounded-lg border border-rose-700/30">
               <p className="text-rose-300 font-medium">Special Hours During Festivals</p>
