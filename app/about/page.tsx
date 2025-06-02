@@ -236,7 +236,7 @@ export default function AboutPage() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-6"
+                className="bg-white text-terracotta-700 hover:bg-white/90 border-none shadow-lg text-lg px-8 py-6"
               >
                 <Link href="/contact">Book A Table</Link>
               </Button>
