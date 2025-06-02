@@ -66,7 +66,7 @@ export default function CateringPage() {
     <div className="pt-24">
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0 bg-gradient-to-br from-rose-700 via-amber-600 to-rose-800">
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-rose-700 via-Blue-600 to-rose-800">
           {/* Decorative elements */}
           <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-white rounded-full opacity-10 blur-3xl"></div>
           <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-white rounded-full opacity-10 blur-3xl"></div>

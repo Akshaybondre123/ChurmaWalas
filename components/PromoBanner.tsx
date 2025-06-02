@@ -18,8 +18,7 @@ export default function PromoBanner() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -50 }}
-          className="bg-gradient-to-r from-rose-600 to-amber-600 text-white py-3 relative z-20"
-        >
+          className="bg-[#6b8142] text-white py-3 relative z-20"        >
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-center">
               <div className="text-center flex-1">
@@ -31,8 +30,7 @@ export default function PromoBanner() {
              <Button
   asChild
   size="sm"
-  className="bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 text-white px-6 py-2 rounded-full text-xs md:text-sm shadow-lg transition-colors duration-300"
->
+ className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 ml-4 rounded-full px-6 shadow-lg text-white">
   <Link href="/menu">Order Now</Link>
 </Button>
 

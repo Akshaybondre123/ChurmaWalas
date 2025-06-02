@@ -95,11 +95,9 @@ export default function Navbar() {
   <header
     className={cn(
       "fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full",
-      scrolled
-        ? "bg-gradient-to-r from-rose-900/95 via-amber-800/95 to-rose-900/95 backdrop-blur-md shadow-lg py-3"
-        : "bg-gradient-to-r from-rose-900/70 via-amber-800/70 to-rose-900/70 backdrop-blur-sm py-4",
-      visible ? "translate-y-0" : "-translate-y-full",
-    )}
+      scrolled ? "bg-[#6b8142]/95 backdrop-blur-md shadow-lg py-4" : "bg-[#6b8142]/80 backdrop-blur-sm py-4",
+          visible ? "translate-y-0" : "-translate-y-full",
+        )}
   >
     <div className="container mx-auto px-4">
       <div className="flex items-center justify-between">
@@ -127,7 +125,7 @@ export default function Navbar() {
             >
               Churma Wala's
             </span>
-            <div className={cn("h-0.5 bg-rose-400 transition-all duration-300", scrolled ? "w-12" : "w-16")}></div>
+            <div className={cn("h-0.5 bg-amber-400 transition-all duration-300", scrolled ? "w-12" : "w-16")}></div>
           </div>
         </Link>
 
@@ -137,18 +135,19 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-white hover:text-rose-300 transition-colors font-medium relative group"
+              className="text-white hover:text-amber-300 transition-colors font-medium relative group"
             >
               {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-rose-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
-          <Button
-            asChild
-            className="bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 ml-4 rounded-full px-6 shadow-lg"
-          >
-            <Link href="/contact#book">Book A Table</Link>
-          </Button>
+         <Button
+  asChild
+  className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 ml-4 rounded-full px-6 shadow-lg text-white"
+>
+  <Link href="/contact#book">Book A Table</Link>
+</Button>
+
         </nav>
 
         {/* Mobile Hamburger */}

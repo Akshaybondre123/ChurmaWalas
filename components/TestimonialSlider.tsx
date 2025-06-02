@@ -68,9 +68,9 @@ export default function TestimonialSlider() {
   }
 
   return (
-    <section ref={ref} className="py-24 bg-white relative overflow-hidden">
+    <section ref={ref} className="py-24 bg-sky-400 relative overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-10">
         <Image
           src="https://img.freepik.com/free-vector/mandala-illustration_53876-81805.jpg"
           alt="Background Pattern"
@@ -86,18 +86,16 @@ export default function TestimonialSlider() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-amber-700 font-serif">
-            What Our Guests Say
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-rose-500 to-amber-500 mx-auto"></div>
-          <p className="mt-6 text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold mb-4 text-white font-serif">What Our Guests Say</h2>
+          <div className="w-24 h-1 bg-white mx-auto"></div>
+          <p className="mt-6 text-white/90 max-w-2xl mx-auto">
             Don't just take our word for it - hear what our valued customers have to say about their dining experience
             at Churma Wala's
           </p>
         </motion.div>
 
         <div className="relative max-w-5xl mx-auto">
-          <div className="absolute -top-16 -left-16 text-rose-200 opacity-20">
+          <div className="absolute -top-16 -left-16 text-white/20 opacity-30">
             <Quote className="h-32 w-32" />
           </div>
 
@@ -113,10 +111,10 @@ export default function TestimonialSlider() {
             >
               {testimonials.map((testimonial) => (
                 <div key={testimonial.id} className="w-full flex-shrink-0 px-4">
-                  <div className="bg-gradient-to-r from-rose-50 to-amber-50 p-10 rounded-2xl shadow-xl">
+                  <div className="bg-white/90 backdrop-blur-sm p-10 rounded-2xl shadow-xl border border-white/20">
                     <div className="flex flex-col md:flex-row gap-8 items-center">
                       <div className="md:w-1/3 flex flex-col items-center">
-                        <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-rose-200 shadow-lg mb-4">
+                        <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg mb-4">
                           <Image
                             src={testimonial.avatar || "/placeholder.svg"}
                             alt={testimonial.name}
@@ -124,8 +122,8 @@ export default function TestimonialSlider() {
                             className="object-cover"
                           />
                         </div>
-                        <h3 className="font-bold text-xl text-rose-700">{testimonial.name}</h3>
-                        <p className="text-amber-600">{testimonial.location}</p>
+                        <h3 className="font-bold text-xl text-sky-700">{testimonial.name}</h3>
+                        <p className="text-sky-600">{testimonial.location}</p>
                         <div className="flex justify-center mt-3">
                           {[...Array(5)].map((_, i) => (
                             <Star
@@ -156,7 +154,7 @@ export default function TestimonialSlider() {
                 onClick={() => setCurrentIndex(index)}
                 className={cn(
                   "w-3 h-3 rounded-full transition-all duration-300",
-                  index === currentIndex ? "bg-rose-500 w-10" : "bg-rose-300 hover:bg-rose-400",
+                  index === currentIndex ? "bg-white w-10" : "bg-white/60 hover:bg-white/80",
                 )}
                 aria-label={`Go to testimonial ${index + 1}`}
               />
