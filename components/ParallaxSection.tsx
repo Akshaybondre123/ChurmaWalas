@@ -47,7 +47,7 @@ export default function ParallaxSection() {
   }
 
   return (
-    <section ref={sectionRef} className="py-24 bg-amber-50 relative overflow-hidden">
+    <section ref={sectionRef} className="py-24 bg-cream-50 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <Image
@@ -100,24 +100,24 @@ export default function ParallaxSection() {
             }}
           >
             <div className="relative">
-              <h2 className="text-5xl font-bold mb-6 text-amber-800 font-serif relative z-10">Our Story</h2>
-              <div className="w-24 h-1 bg-amber-500 mb-8"></div>
-              <div className="absolute -top-10 -left-10 text-9xl font-serif text-amber-200 opacity-20 z-0">1985</div>
+              <h2 className="text-5xl font-bold mb-6 text-saffron-800 font-serif relative z-10">Our Story</h2>
+              <div className="w-24 h-1 bg-saffron-500 mb-8"></div>
+              <div className="absolute -top-10 -left-10 text-9xl font-serif text-cream-200 opacity-20 z-0">1985</div>
             </div>
 
-            <p className="text-xl mb-6 text-amber-900/80 leading-relaxed">
+            <p className="text-xl mb-6 text-saffron-900/80 leading-relaxed">
               Founded in 1985, Churma Wala's began as a small family-owned eatery in Jaipur. Our passion for authentic
               Rajasthani cuisine has led us to expand across multiple locations while maintaining the traditional
               flavors and cooking techniques that make our food special.
             </p>
 
-            <p className="text-xl mb-8 text-amber-900/80 leading-relaxed">
+            <p className="text-xl mb-8 text-saffron-900/80 leading-relaxed">
               Our recipes have been passed down through generations, preserving the rich culinary heritage of Rajasthan.
               We take pride in using locally-sourced ingredients and traditional cooking methods to create an authentic
               dining experience that transports you to the royal courts of Rajasthan.
             </p>
 
-            <Button asChild className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-6 rounded-full text-lg">
+            <Button asChild className="bg-saffron-600 hover:bg-saffron-700 text-white px-8 py-6 rounded-full text-lg">
               <Link href="/about">Discover Our Heritage</Link>
             </Button>
           </div>

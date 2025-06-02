@@ -560,16 +560,16 @@ const menuItems = {
 
 export default function MenuPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-100 via-yellow-50 to-red-100">
+    <div className="min-h-screen bg-gradient-to-b from-cream-100 via-saffron-50 to-terracotta-100">
       <div className="container mx-auto px-4 py-20">
         <div className="text-center mb-12 relative">
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-yellow-500 rounded-full opacity-20 blur-3xl"></div>
-          <div className="absolute top-1/3 left-1/4 w-32 h-32 bg-red-500 rounded-full opacity-20 blur-3xl"></div>
-          <div className="absolute bottom-0 right-1/4 w-32 h-32 bg-orange-500 rounded-full opacity-20 blur-3xl"></div>
-          <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-orange-500 to-yellow-500 mb-4 font-serif relative z-10 drop-shadow-sm">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-saffron-500 rounded-full opacity-20 blur-3xl"></div>
+          <div className="absolute top-1/3 left-1/4 w-32 h-32 bg-terracotta-500 rounded-full opacity-20 blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/4 w-32 h-32 bg-cream-500 rounded-full opacity-20 blur-3xl"></div>
+          <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-saffron-600 via-terracotta-500 to-cream-500 mb-4 font-serif relative z-10 drop-shadow-sm">
             Our Delicious Menu
           </h1>
-          <div className="w-40 h-2 bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 mx-auto mb-6 rounded-full shadow-sm"></div>
+          <div className="w-40 h-2 bg-gradient-to-r from-saffron-500 via-terracotta-500 to-cream-500 mx-auto mb-6 rounded-full shadow-sm"></div>
           <p className="text-gray-700 max-w-2xl mx-auto relative z-10 text-lg">
             Explore our extensive menu featuring authentic Rajasthani dishes prepared with traditional recipes and the
             finest ingredients. From our signature Daal Baati Churma to the unique Pineapple Churma, there's something
@@ -579,27 +579,17 @@ export default function MenuPage() {
 
         <Tabs defaultValue="churma" className="w-full">
           <div className="mb-8 text-center overflow-x-auto pb-2">
-            <TabsList className="inline-flex flex-nowrap border-b-2 border-orange-200 w-auto min-w-full sm:min-w-0">
+            <TabsList className="inline-flex flex-nowrap border-b-2 border-cream-200 w-auto min-w-full sm:min-w-0">
               {menuCategories.map((category, index) => (
-                <TabsTrigger
+                 <TabsTrigger
                   key={category.id}
                   value={category.id}
                   className={`px-4 sm:px-6 py-1 text-base sm:text-lg font-medium rounded-t-lg transition-all duration-300 whitespace-nowrap ${
-                    index === 0
-                      ? "data-[state=active]:bg-red-600 data-[state=active]:text-white hover:bg-red-500/10"
-                      : index === 1
-                        ? "data-[state=active]:bg-orange-600 data-[state=active]:text-white hover:bg-orange-500/10"
-                        : index === 2
-                          ? "data-[state=active]:bg-yellow-600 data-[state=active]:text-white hover:bg-yellow-500/10"
-                          : index === 3
-                            ? "data-[state=active]:bg-amber-600 data-[state=active]:text-white hover:bg-amber-500/10"
-                            : index === 4
-                              ? "data-[state=active]:bg-pink-600 data-[state=active]:text-white hover:bg-pink-500/10"
-                              : index === 5
-                                ? "data-[state=active]:bg-rose-600 data-[state=active]:text-white hover:bg-rose-500/10"
-                                : index === 6
-                                  ? "data-[state=active]:bg-purple-600 data-[state=active]:text-white hover:bg-purple-500/10"
-                                  : "data-[state=active]:bg-green-600 data-[state=active]:text-white hover:bg-green-500/10"
+                    index % 3 === 0
+                      ? "data-[state=active]:bg-saffron-600 data-[state=active]:text-white hover:bg-saffron-500/10"
+                      : index % 3 === 1
+                        ? "data-[state=active]:bg-terracotta-600 data-[state=active]:text-white hover:bg-terracotta-500/10"
+                        : "data-[state=active]:bg-cream-600 data-[state=active]:text-white hover:bg-cream-500/10"
                   }`}
                 >
                   {category.name}
@@ -621,50 +611,50 @@ export default function MenuPage() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                       <div className="absolute top-3 right-3 flex flex-col gap-2 items-end">
                         {item.isSignature && (
-                          <Badge className="bg-gradient-to-r from-yellow-500 to-red-500 text-white border-none px-4 py-1.5 text-sm font-bold shadow-lg">
+                             <Badge className="bg-gradient-to-r from-saffron-500 to-terracotta-500 text-white border-none px-4 py-1.5 text-sm font-bold shadow-lg">
                             SIGNATURE DISH ⭐
                           </Badge>
                         )}
                         {item.isPremium && (
-                          <Badge className="bg-gradient-to-r from-purple-500 to-pink-500 text-white border-none px-4 py-1.5 text-sm font-bold shadow-lg">
+                          <Badge className="bg-gradient-to-r from-terracotta-500 to-cream-500 text-white border-none px-4 py-1.5 text-sm font-bold shadow-lg">
                             PREMIUM ✨
                           </Badge>
                         )}
                         {item.isSeasonal && (
-                          <Badge className="bg-gradient-to-r from-green-500 to-teal-500 text-white border-none px-4 py-1.5 text-sm font-bold shadow-lg">
+                          <Badge className="bg-gradient-to-r from-cream-500 to-saffron-500 text-white border-none px-4 py-1.5 text-sm font-bold shadow-lg">
                             SEASONAL 🍃
                           </Badge>
                         )}
                       </div>
                       <div className="absolute bottom-3 left-3 right-3 flex justify-between items-center">
                         <h3 className="text-2xl font-bold text-white drop-shadow-md">{item.name}</h3>
-                        <span className="font-bold text-xl text-white bg-gradient-to-r from-red-600 to-orange-600 px-4 py-1 rounded-full shadow-md">
+                        <span className="font-bold text-xl text-white bg-gradient-to-r from-saffron-600 to-terracotta-600 px-4 py-1 rounded-full shadow-md">
                           {item.perPiece ? `${item.price}/pc` : item.price}
                         </span>
                       </div>
                     </div>
-                    <CardContent className="p-6 bg-gradient-to-br from-white to-orange-50">
+                    <CardContent className="p-6 bg-gradient-to-br from-white to-cream-50">
                       <p className="text-gray-700 mb-4 text-lg">{item.description}</p>
                       <div className="flex flex-wrap gap-2">
                         {item.isVeg ? (
                           <Badge
                             variant="outline"
-                            className="border-2 border-green-500 text-green-600 bg-green-50 px-3 py-1 text-sm font-medium"
+                            className="border-2 border-saffron-500 text-saffron-600 bg-saffron-50 px-3 py-1 text-sm font-medium"
                           >
                             Vegetarian 🌱
                           </Badge>
                         ) : (
-                          <Badge
+                           <Badge
                             variant="outline"
-                            className="border-2 border-red-500 text-red-600 bg-red-50 px-3 py-1 text-sm font-medium"
+                            className="border-2 border-terracotta-500 text-terracotta-600 bg-terracotta-50 px-3 py-1 text-sm font-medium"
                           >
-                            Non-Vegetarian 🍖
+                            Vegetarian
                           </Badge>
                         )}
                         {item.isSpicy && (
                           <Badge
                             variant="outline"
-                            className="border-2 border-orange-500 text-orange-600 bg-orange-50 px-3 py-1 text-sm font-medium"
+                            className="border-2 border-cream-500 text-cream-600 bg-cream-50 px-3 py-1 text-sm font-medium"
                           >
                             Spicy 🔥
                           </Badge>
@@ -678,17 +668,16 @@ export default function MenuPage() {
           ))}
         </Tabs>
 
-        <div className="mt-16 p-8 bg-gradient-to-r from-red-100 to-amber-100 rounded-xl shadow-lg">
-          <h2 className="text-2xl font-bold text-red-800 mb-4 text-center">Special Note</h2>
-          <p className="text-center text-red-700">
+ <div className="mt-16 p-8 bg-gradient-to-r from-saffron-100 to-terracotta-100 rounded-xl shadow-lg">          
+ <h2 className="text-2xl font-bold text-saffron-800 mb-4 text-center">Special Note</h2>          <p className="text-center text-red-700">
             Minimum serving size for Sabji and Churma is 250 grams. All prices are inclusive of taxes.
           </p>
         </div>
 
         {/* Decorative elements */}
-        <div className="absolute top-1/4 left-10 w-64 h-64 bg-red-500 rounded-full opacity-5 blur-3xl -z-10"></div>
-        <div className="absolute bottom-1/4 right-10 w-64 h-64 bg-yellow-500 rounded-full opacity-5 blur-3xl -z-10"></div>
-        <div className="absolute top-3/4 left-1/3 w-64 h-64 bg-orange-500 rounded-full opacity-5 blur-3xl -z-10"></div>
+        <div className="absolute top-1/4 left-10 w-64 h-64 bg-saffron-500 rounded-full opacity-5 blur-3xl -z-10"></div>
+        <div className="absolute bottom-1/4 right-10 w-64 h-64 bg-terracotta-500 rounded-full opacity-5 blur-3xl -z-10"></div>
+        <div className="absolute top-3/4 left-1/3 w-64 h-64 bg-cream-500 rounded-full opacity-5 blur-3xl -z-10"></div>
       </div>
     </div>
   )

@@ -68,7 +68,7 @@ export default function TestimonialSlider() {
   }
 
   return (
-    <section ref={ref} className="py-24 bg-sky-400 relative overflow-hidden">
+    <section ref={ref} className="py-24 bg-terracotta-600 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <Image
@@ -122,15 +122,15 @@ export default function TestimonialSlider() {
                             className="object-cover"
                           />
                         </div>
-                        <h3 className="font-bold text-xl text-sky-700">{testimonial.name}</h3>
-                        <p className="text-sky-600">{testimonial.location}</p>
+                        <h3 className="font-bold text-xl text-terracotta-700">{testimonial.name}</h3>
+                        <p className="text-terracotta-600">{testimonial.location}</p>
                         <div className="flex justify-center mt-3">
                           {[...Array(5)].map((_, i) => (
                             <Star
                               key={i}
                               className={cn(
                                 "w-5 h-5",
-                                i < testimonial.rating ? "fill-amber-500 text-amber-500" : "text-gray-300",
+                                i < testimonial.rating ? "fill-cream-500 text-cream-500" : "text-gray-300",
                               )}
                             />
                           ))}

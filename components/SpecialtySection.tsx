@@ -31,10 +31,10 @@ export default function SpecialtySection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-amber-700 font-serif">
+          <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-saffron-700 to-terracotta-700 font-serif">
             Our Specialties
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-rose-500 to-amber-500 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-saffron-500 to-terracotta-500 mx-auto"></div>
           <p className="mt-6 text-gray-600 max-w-2xl mx-auto">
             Discover what makes Churma Wala's the most beloved Rajasthani restaurant, where tradition meets excellence
           </p>
@@ -57,14 +57,14 @@ export default function SpecialtySection() {
               className="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-              <div className="bg-gradient-to-r from-rose-500 to-amber-500 rounded-full w-16 h-16 flex items-center justify-center mb-4 transform transition-transform duration-500 group-hover:rotate-12">
+              <div className="bg-gradient-to-r from-saffron-500 to-terracotta-500 rounded-full w-16 h-16 flex items-center justify-center mb-4 transform transition-transform duration-500 group-hover:rotate-12">
                 <Award className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">Authentic Recipes</h3>
               <p className="text-white/80 mb-4">
                 Our recipes have been passed down through generations, preserving the authentic flavors of Rajasthan.
               </p>
-              <div className="w-10 h-1 bg-rose-500 transform transition-all duration-500 group-hover:w-20"></div>
+              <div className="w-10 h-1 bg-saffron-500 transform transition-all duration-500 group-hover:w-20"></div>
             </div>
           </motion.div>
 
@@ -84,14 +84,14 @@ export default function SpecialtySection() {
               className="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-              <div className="bg-gradient-to-r from-rose-500 to-amber-500 rounded-full w-16 h-16 flex items-center justify-center mb-4 transform transition-transform duration-500 group-hover:rotate-12">
+              <div className="bg-gradient-to-r from-saffron-500 to-terracotta-500 rounded-full w-16 h-16 flex items-center justify-center mb-4 transform transition-transform duration-500 group-hover:rotate-12">
                 <Utensils className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">Traditional Methods</h3>
               <p className="text-white/80 mb-4">
                 We use traditional cooking methods and earthenware to enhance the flavors of our dishes.
               </p>
-              <div className="w-10 h-1 bg-rose-500 transform transition-all duration-500 group-hover:w-20"></div>
+              <div className="w-10 h-1 bg-saffron-500 transform transition-all duration-500 group-hover:w-20"></div>
             </div>
           </motion.div>
 
@@ -111,14 +111,14 @@ export default function SpecialtySection() {
               className="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-              <div className="bg-gradient-to-r from-rose-500 to-amber-500 rounded-full w-16 h-16 flex items-center justify-center mb-4 transform transition-transform duration-500 group-hover:rotate-12">
+              <div className="bg-gradient-to-r from-saffron-500 to-terracotta-500 rounded-full w-16 h-16 flex items-center justify-center mb-4 transform transition-transform duration-500 group-hover:rotate-12">
                 <Clock className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">Royal Experience</h3>
               <p className="text-white/80 mb-4">
                 Experience dining like royalty with our carefully crafted ambiance and exceptional service.
               </p>
-              <div className="w-10 h-1 bg-rose-500 transform transition-all duration-500 group-hover:w-20"></div>
+              <div className="w-10 h-1 bg-saffron-500 transform transition-all duration-500 group-hover:w-20"></div>
             </div>
           </motion.div>
         </div>

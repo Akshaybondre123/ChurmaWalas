@@ -66,31 +66,30 @@ export default function CateringPage() {
     <div className="pt-24">
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0 bg-gradient-to-br from-rose-700 via-Blue-600 to-rose-800">
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-cream-200 via-saffron-100 to-terracotta-200">
           {/* Decorative elements */}
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-white rounded-full opacity-10 blur-3xl"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-white rounded-full opacity-10 blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-amber-400 rounded-full opacity-20 blur-3xl"></div>
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-white/60 rounded-full opacity-10 blur-3xl"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-white/60 rounded-full opacity-10 blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-saffron-300/60 rounded-full opacity-20 blur-3xl"></div>
 
           {/* Pattern overlay */}
           <div className="absolute inset-0 bg-[url('https://img.freepik.com/free-vector/hand-drawn-indian-pattern_23-2148990017.jpg')] opacity-5"></div>
         </div>
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 font-serif drop-shadow-lg">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4 font-serif drop-shadow-lg">
             Catering Services
           </h1>
           <div className="w-32 h-2 bg-white mx-auto mb-6 rounded-full shadow-md"></div>
-          <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
             Authentic Rajasthani cuisine for all your special occasions, prepared with love and tradition
           </p>
           <Button
-  asChild
-  size="lg"
-  className="bg-white text-rose-700 hover:bg-white/90 px-8 py-6 rounded-full text-lg shadow-lg"
->
-  <Link href="#inquiry">Make an Inquiry</Link>
-</Button>
-
+            asChild
+            size="lg"
+            className="bg-saffron-600 text-white hover:bg-saffron-700 px-8 py-6 rounded-full text-lg shadow-lg"
+          >
+            <Link href="#inquiry">Make an Inquiry</Link>
+          </Button>
         </div>
       </section>
 
@@ -98,10 +97,10 @@ export default function CateringPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-amber-700 font-serif">
+            <h2 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-saffron-700 to-terracotta-700 font-serif">
               Catering & Online Orders
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-rose-500 to-amber-500 mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-saffron-500 to-terracotta-500 mx-auto mb-6"></div>
             <p className="text-lg text-gray-700 mb-8">
               Planning a celebration or hosting a special event? We offer pure vegetarian, hygienically prepared
               Rajasthani food for all kinds of functions and festivals — right at your doorstep!
@@ -115,48 +114,48 @@ export default function CateringPage() {
       </section>
 
       {/* Our Services */}
-      <section className="py-16 bg-gradient-to-r from-rose-50 to-amber-50">
+      <section className="py-16 bg-gradient-to-r from-cream-50 to-saffron-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-amber-700 font-serif">
+          <h2 className="text-3xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-saffron-700 to-terracotta-700 font-serif">
             Our Catering Services
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-xl shadow-md text-center">
-              <div className="bg-gradient-to-r from-rose-500 to-amber-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
+              <div className="bg-gradient-to-r from-saffron-500 to-terracotta-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
                 <UtensilsCrossed className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-rose-700">Full-Service Catering</h3>
+              <h3 className="text-xl font-bold mb-3 text-saffron-700">Full-Service Catering</h3>
               <p className="text-gray-600">
                 Complete setup with servers, chefs, and all necessary equipment for a seamless dining experience.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-md text-center">
-              <div className="bg-gradient-to-r from-rose-500 to-amber-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
+              <div className="bg-gradient-to-r from-saffron-500 to-terracotta-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
                 <Truck className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-rose-700">Drop-Off Catering</h3>
+              <h3 className="text-xl font-bold mb-3 text-saffron-700">Drop-Off Catering</h3>
               <p className="text-gray-600">
                 We deliver freshly prepared food to your venue, ready to serve with disposable serving ware.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-md text-center">
-              <div className="bg-gradient-to-r from-rose-500 to-amber-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
+              <div className="bg-gradient-to-r from-saffron-500 to-terracotta-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
                 <Users className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-rose-700">Custom Menus</h3>
+              <h3 className="text-xl font-bold mb-3 text-saffron-700">Custom Menus</h3>
               <p className="text-gray-600">
                 Personalized menu planning to suit your event theme, dietary requirements, and preferences.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-md text-center">
-              <div className="bg-gradient-to-r from-rose-500 to-amber-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
+              <div className="bg-gradient-to-r from-saffron-500 to-terracotta-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
                 <Clock className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-rose-700">Last-Minute Orders</h3>
+              <h3 className="text-xl font-bold mb-3 text-saffron-700">Last-Minute Orders</h3>
               <p className="text-gray-600">
                 Quick turnaround for urgent catering needs with our efficient preparation process.
               </p>
@@ -168,7 +167,7 @@ export default function CateringPage() {
       {/* Events We Cater */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-amber-700 font-serif">
+          <h2 className="text-3xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-saffron-700 to-terracotta-700 font-serif">
             Events We Cater To
           </h2>
 
@@ -192,9 +191,9 @@ export default function CateringPage() {
       </section>
 
       {/* Catering Packages */}
-      <section className="py-16 bg-gradient-to-r from-rose-50 to-amber-50">
+     <section className="py-16 bg-gradient-to-r from-cream-50 to-saffron-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-amber-700 font-serif">
+          <h2 className="text-3xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-saffron-700 to-terracotta-700 font-serif">
             Our Catering Packages
           </h2>
 
@@ -223,7 +222,7 @@ export default function CateringPage() {
                   <p className="text-sm text-gray-500 mb-6">Minimum {pkg.minGuests} guests</p>
                   <Button
                     asChild
-                    className="w-full bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 rounded-full"
+                    className="w-full bg-gradient-to-r from-saffron-500 to-terracotta-500 hover:from-saffron-600 hover:to-terracotta-600 rounded-full"
                   >
                     <Link href="#inquiry">Get Quote</Link>
                   </Button>
@@ -238,23 +237,27 @@ export default function CateringPage() {
             </p>
             <Button
               asChild
-              className="bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 rounded-full"
-            >
+              className="bg-gradient-to-r from-saffron-500 to-terracotta-500 hover:from-saffron-600 hover:to-terracotta-600 rounded-full"            >
               <Link href="#inquiry">Request Custom Package</Link>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Online Ordering */}
+
+
+
+
+
+       {/* Online Ordering */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-amber-700 font-serif">
+              <h2 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-saffron-700 to-terracotta-700 font-serif">
                 Order Online
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-rose-500 to-amber-500 mb-6"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-saffron-500 to-terracotta-500 mb-6"></div>
               <p className="text-lg text-gray-700 mb-6">
                 You can also order our delicious food directly from Swiggy or Zomato for home delivery. Enjoy our
                 authentic Rajasthani dishes from the comfort of your home.
@@ -266,7 +269,7 @@ export default function CateringPage() {
               <div className="flex flex-wrap gap-6">
                 <Button
                   asChild
-                  className="bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 rounded-full px-8 py-6"
+                  className="bg-gradient-to-r from-saffron-500 to-terracotta-500 hover:from-saffron-600 hover:to-terracotta-600 rounded-full px-8 py-6"
                 >
                   <Link
                     href="https://www.swiggy.com/menu/398956?source=sharing"
@@ -284,9 +287,9 @@ export default function CateringPage() {
                     Order on Swiggy
                   </Link>
                 </Button>
-                <Button
+               <Button
                   asChild
-                  className="bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 rounded-full px-8 py-6"
+                  className="bg-gradient-to-r from-saffron-500 to-terracotta-500 hover:from-saffron-600 hover:to-terracotta-600 rounded-full px-8 py-6"
                 >
                   <Link
                     href="https://zomato.onelink.me/xqzv/sndsx7ek"
@@ -331,14 +334,29 @@ export default function CateringPage() {
         </div>
       </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       {/* Inquiry Form */}
-      <section id="inquiry" className="py-16 bg-gradient-to-r from-rose-50 to-amber-50">
+      <section id="inquiry" className="py-16 bg-gradient-to-r from-cream-50 to-saffron-50">
   <div className="container mx-auto px-4">
     <div className="max-w-3xl mx-auto">
-      <h2 className="text-3xl font-bold mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-amber-700 font-serif">
+      <h2 className="text-3xl font-bold mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-saffron-700 to-terracotta-700 font-serif">
         Make an Inquiry
       </h2>
-      <div className="w-24 h-1 bg-gradient-to-r from-rose-500 to-amber-500 mx-auto mb-8"></div>
+      <div className="w-24 h-1 bg-gradient-to-r from-saffron-500 to-terracotta-500 mx-auto mb-8"></div>
       <p className="text-center text-gray-700 mb-8">
         For bookings or inquiries, contact us directly — we promise to serve you the best in taste and tradition!
       </p>
@@ -443,9 +461,9 @@ export default function CateringPage() {
           </div>
 
           <Button
-            type="submit"
-            className="w-full bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 text-white py-4 rounded-full text-lg font-medium"
-          >
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-saffron-500 to-terracotta-500 hover:from-saffron-600 hover:to-terracotta-600 text-white py-4 rounded-full text-lg font-medium"
+                >
             Submit Inquiry
           </Button>
         </form>
@@ -454,9 +472,9 @@ export default function CateringPage() {
       <div className="mt-12 text-center">
         <p className="text-gray-700 mb-4">Prefer to talk to us directly?</p>
         <Button
-          asChild
-          className="bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 rounded-full"
-        >
+                asChild
+                className="bg-gradient-to-r from-saffron-500 to-terracotta-500 hover:from-saffron-600 hover:to-terracotta-600 rounded-full"
+              >
           <Link href="tel:+919876543210" className="flex items-center gap-2 justify-center text-white py-2 px-4">
             <Phone className="h-5 w-5" /> +91 8946951963
           </Link>
@@ -465,6 +483,9 @@ export default function CateringPage() {
     </div>
   </div>
 </section>
+
+
+
 
     </div>
   )

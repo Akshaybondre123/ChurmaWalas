@@ -18,7 +18,7 @@ export default function PromoBanner() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -50 }}
-          className="bg-[#6b8142] text-white py-3 relative z-20"        >
+         className="bg-terracotta-600 text-white py-3 relative z-20"       >
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-center">
               <div className="text-center flex-1">

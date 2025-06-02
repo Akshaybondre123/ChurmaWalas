@@ -45,7 +45,7 @@ export default function FoodShowcase() {
   const isInView = useInView(ref, { once: true, amount: 0.2 })
 
   return (
-    <section ref={ref} className="py-24 bg-gradient-to-r from-rose-50 to-amber-50 relative">
+    <section ref={ref} className="py-24 bg-gradient-to-r from-cream-50 to-saffron-50 relative">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"
@@ -53,10 +53,10 @@ export default function FoodShowcase() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-amber-700 font-serif">
+          <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-saffron-700 to-terracotta-700 font-serif">
             Our Signature Dishes
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-rose-500 to-amber-500 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-saffron-500 to-terracotta-500 mx-auto"></div>
           <p className="mt-6 text-gray-600 max-w-2xl mx-auto">
             Experience the authentic flavors of Rajasthan with our carefully crafted signature dishes, prepared using
             traditional recipes passed down through generations.
@@ -85,21 +85,21 @@ export default function FoodShowcase() {
                   )}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute top-4 right-4 bg-gradient-to-r from-rose-500 to-amber-500 text-white text-sm font-bold px-3 py-1 rounded-full">
+                <div className="absolute top-4 right-4 bg-gradient-to-r from-saffron-500 to-terracotta-500 text-white text-sm font-bold px-3 py-1 rounded-full">
                   {dish.category}
                 </div>
-                <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm text-rose-600 text-lg font-bold px-4 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
+                <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm text-terracotta-600 text-lg font-bold px-4 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
                   {dish.price}
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-2 text-rose-700 group-hover:text-rose-600 transition-colors duration-300">
+                <h3 className="text-2xl font-bold mb-2 text-saffron-700 group-hover:text-saffron-600 transition-colors duration-300">
                   {dish.name}
                 </h3>
                 <p className="text-gray-600 mb-6 line-clamp-2">{dish.description}</p>
                 <Button
                   asChild
-                  className="w-full bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 group"
+                  className="w-full bg-gradient-to-r from-saffron-500 to-terracotta-500 hover:from-saffron-600 hover:to-terracotta-600 group"
                 >
                   <Link href="/menu" className="flex items-center justify-center gap-2">
                     View on Menu
@@ -115,7 +115,7 @@ export default function FoodShowcase() {
           <Button
             asChild
             size="lg"
-            className="bg-gradient-to-r from-rose-600 to-amber-600 hover:from-rose-700 hover:to-amber-700 text-white px-8 py-6 rounded-full text-lg shadow-lg"
+            className="bg-gradient-to-r from-saffron-600 to-terracotta-600 hover:from-saffron-700 hover:to-terracotta-700 text-white px-8 py-6 rounded-full text-lg shadow-lg"
           >
             <Link href="/menu">Explore Full Menu</Link>
           </Button>

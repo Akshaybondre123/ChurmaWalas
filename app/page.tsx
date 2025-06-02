@@ -13,7 +13,7 @@ import SimplifiedCateringSection from "@/components/SimplifiedCateringSection"
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen pt-20">
+    <div className="flex flex-col min-h-screen">
       {/* Hero Slider Section */}
       <HeroSlider />
 
@@ -39,7 +39,7 @@ export default function Home() {
       <InstagramFeed />
 
       {/* Call to Action */}
-      <section className="py-20 bg-white relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r from-cream-50 to-saffron-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <Image
             src="https://img.freepik.com/free-vector/hand-drawn-indian-pattern_23-2148990017.jpg"
@@ -50,10 +50,10 @@ export default function Home() {
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-amber-700 font-serif">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-saffron-700 to-terracotta-700 font-serif">
               Experience the Royal Flavors of Rajasthan
             </h2>
-            <p className="text-xl text-amber-700 mb-10 max-w-2xl mx-auto">
+            <p className="text-xl text-saffron-700 mb-10 max-w-2xl mx-auto">
               Join us for an unforgettable culinary journey through the rich and diverse flavors of authentic Rajasthani
               cuisine.
             </p>
@@ -61,7 +61,7 @@ export default function Home() {
               <Button
                 asChild
                 size="lg"
-                className="bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 text-white px-8 py-6 rounded-full text-lg shadow-lg"
+                className="bg-gradient-to-r from-saffron-500 to-terracotta-500 hover:from-saffron-600 hover:to-terracotta-600 text-white px-8 py-6 rounded-full text-lg shadow-lg"
               >
                 <Link href="/menu">Explore Our Menu</Link>
               </Button>
@@ -69,7 +69,7 @@ export default function Home() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-rose-500 text-rose-600 hover:bg-rose-50 px-8 py-6 rounded-full text-lg"
+                className="border-saffron-500 text-saffron-600 hover:bg-saffron-50 px-8 py-6 rounded-full text-lg"
               >
                 <Link href="/contact#book">Book A Table</Link>
               </Button>

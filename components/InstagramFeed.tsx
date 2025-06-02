@@ -59,12 +59,12 @@ export default function InstagramFeed() {
           transition={{ duration: 0.5 }}
         >
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Instagram className="h-6 w-6 text-rose-600" />
-            <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-amber-700 font-serif">
+            <Instagram className="h-6 w-6 text-terracotta-600" />
+            <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-saffron-700 to-terracotta-700 font-serif">
               Follow Us on Instagram
             </h2>
           </div>
-          <div className="w-24 h-1 bg-gradient-to-r from-rose-500 to-amber-500 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-saffron-500 to-terracotta-500 mx-auto"></div>
           <p className="mt-6 text-gray-600 max-w-2xl mx-auto">
             Stay updated with our latest dishes, events, and behind-the-scenes moments
           </p>
@@ -114,7 +114,7 @@ export default function InstagramFeed() {
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-rose-600 hover:text-rose-700 font-medium"
+            className="inline-flex items-center gap-2 text-terracotta-600 hover:text-terracotta-700 font-medium"
           >
             <Instagram className="h-5 w-5" />
             @churmawalas

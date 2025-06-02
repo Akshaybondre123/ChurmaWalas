@@ -133,7 +133,7 @@ const galleryItems = {
 }
 
 export default function GalleryPage() {
-  const [selectedImage, setSelectedImage] = useState<{
+  const [selectedMedia, setSelectedMedia] = useState<{
     src?: string
     title: string
     type: "image" | "video"
@@ -148,15 +148,15 @@ export default function GalleryPage() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-100 via-pink-50 to-red-100">
+    <div className="min-h-screen bg-gradient-to-b from-cream-100 via-saffron-50 to-terracotta-100">
       <div className="container mx-auto px-4 py-20">
         <div className="text-center mb-12 relative">
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-purple-500 rounded-full opacity-20 blur-3xl"></div>
-          <div className="absolute top-1/3 left-1/4 w-32 h-32 bg-pink-500 rounded-full opacity-20 blur-3xl"></div>
-          <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 mb-4 font-serif relative z-10 drop-shadow-sm">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-saffron-500 rounded-full opacity-20 blur-3xl"></div>
+          <div className="absolute top-1/3 left-1/4 w-32 h-32 bg-terracotta-500 rounded-full opacity-20 blur-3xl"></div>
+          <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-saffron-600 via-terracotta-500 to-cream-500 mb-4 font-serif relative z-10 drop-shadow-sm">
             Our Colorful Gallery
           </h1>
-          <div className="w-40 h-2 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 mx-auto mb-6 rounded-full shadow-sm"></div>
+          <div className="w-40 h-2 bg-gradient-to-r from-saffron-500 via-terracotta-500 to-cream-500 mx-auto mb-6 rounded-full shadow-sm"></div>
           <p className="text-gray-700 max-w-2xl mx-auto relative z-10 text-lg">
             Explore our visual journey through delicious Rajasthani cuisine, restaurant ambiance, and special events at
             Churma Wala's.
@@ -165,28 +165,28 @@ export default function GalleryPage() {
 
         <Tabs defaultValue="food" className="w-full" onValueChange={(value) => setActiveTab(value)}>
           <div className="mb-8 overflow-x-auto pb-2">
-           <TabsList className="inline-flex flex-nowrap border-b-2 border-pink-200 w-auto min-w-full sm:min-w-0">
+            <TabsList className="inline-flex flex-nowrap border-b-2 border-saffron-200 w-auto min-w-full sm:min-w-0">
               <TabsTrigger
                 value="food"
-                className="px-4 sm:px-8 py-1 text-lg font-medium rounded-t-lg transition-all duration-300 data-[state=active]:bg-purple-600 data-[state=active]:text-white hover:bg-purple-500/10 whitespace-nowrap"
+                className="px-4 sm:px-8 py-1 text-lg font-medium rounded-t-lg transition-all duration-300 data-[state=active]:bg-saffron-600 data-[state=active]:text-white hover:bg-saffron-500/10 whitespace-nowrap"
               >
                 Food
               </TabsTrigger>
               <TabsTrigger
                 value="restaurant"
-                className="px-5 py-1 text-lg font-medium rounded-t-lg transition-all duration-300 data-[state=active]:bg-pink-600 data-[state=active]:text-white hover:bg-pink-500/10"
+                className="px-4 sm:px-8 py-1 text-lg font-medium rounded-t-lg transition-all duration-300 data-[state=active]:bg-terracotta-600 data-[state=active]:text-white hover:bg-terracotta-500/10 whitespace-nowrap"
               >
                 Restaurant
               </TabsTrigger>
               <TabsTrigger
                 value="events"
-                className="px-5 py-1 text-lg font-medium rounded-t-lg transition-all duration-300 data-[state=active]:bg-red-600 data-[state=active]:text-white hover:bg-red-500/10"
+                className="px-4 sm:px-8 py-1 text-lg font-medium rounded-t-lg transition-all duration-300 data-[state=active]:bg-cream-600 data-[state=active]:text-white hover:bg-cream-500/10 whitespace-nowrap"
               >
                 Events
               </TabsTrigger>
               <TabsTrigger
                 value="videos"
-                className="px-5 py-1 text-lg font-medium rounded-t-lg transition-all duration-300 data-[state=active]:bg-orange-600 data-[state=active]:text-white hover:bg-orange-500/10"
+                className="px-4 sm:px-8 py-1 text-lg font-medium rounded-t-lg transition-all duration-300 data-[state=active]:bg-saffron-700 data-[state=active]:text-white hover:bg-saffron-500/10 whitespace-nowrap"
               >
                 Videos
               </TabsTrigger>
@@ -205,7 +205,13 @@ export default function GalleryPage() {
                       exit={{ opacity: 0, y: -30 }}
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                       className="relative group cursor-pointer overflow-hidden rounded-xl shadow-xl"
-                      
+                      onClick={() =>
+                        setSelectedMedia({
+                          src: item.image,
+                          title: item.title,
+                          type: item.type,
+                        })
+                      }
                     >
                       <div className="aspect-[4/3] relative">
                         <Image
@@ -214,7 +220,7 @@ export default function GalleryPage() {
                           fill
                           className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 via-pink-800/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
+                        <div className="absolute inset-0 bg-gradient-to-t from-saffron-900/80 via-terracotta-800/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
                           <div className="absolute bottom-0 left-0 right-0 p-4">
                             <p className="text-white font-bold text-xl">{item.title}</p>
                           </div>
@@ -238,7 +244,13 @@ export default function GalleryPage() {
                       exit={{ opacity: 0, y: -30 }}
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                       className="relative group cursor-pointer overflow-hidden rounded-xl shadow-xl"
-                     
+                      onClick={() =>
+                        setSelectedMedia({
+                          src: item.image,
+                          title: item.title,
+                          type: item.type,
+                        })
+                      }
                     >
                       <div className="aspect-[4/3] relative">
                         <Image
@@ -247,7 +259,7 @@ export default function GalleryPage() {
                           fill
                           className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-pink-900/80 via-red-800/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
+                        <div className="absolute inset-0 bg-gradient-to-t from-terracotta-900/80 via-cream-800/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
                           <div className="absolute bottom-0 left-0 right-0 p-4">
                             <p className="text-white font-bold text-xl">{item.title}</p>
                           </div>
@@ -271,7 +283,13 @@ export default function GalleryPage() {
                       exit={{ opacity: 0, y: -30 }}
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                       className="relative group cursor-pointer overflow-hidden rounded-xl shadow-xl"
-                      
+                      onClick={() =>
+                        setSelectedMedia({
+                          src: item.image,
+                          title: item.title,
+                          type: item.type,
+                        })
+                      }
                     >
                       <div className="aspect-[4/3] relative">
                         <Image
@@ -280,7 +298,7 @@ export default function GalleryPage() {
                           fill
                           className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-red-900/80 via-orange-800/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
+                        <div className="absolute inset-0 bg-gradient-to-t from-cream-900/80 via-saffron-800/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
                           <div className="absolute bottom-0 left-0 right-0 p-4">
                             <p className="text-white font-bold text-xl">{item.title}</p>
                           </div>
@@ -292,7 +310,7 @@ export default function GalleryPage() {
             </div>
           </TabsContent>
 
-           <TabsContent value="videos" className="mt-0">
+          <TabsContent value="videos" className="mt-0">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <AnimatePresence>
                 {isLoaded &&
@@ -304,7 +322,13 @@ export default function GalleryPage() {
                       exit={{ opacity: 0, y: -30 }}
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                       className="relative group cursor-pointer overflow-hidden rounded-xl shadow-xl"
-                     
+                      onClick={() =>
+                        setSelectedMedia({
+                          title: item.title,
+                          type: item.type,
+                          videoUrl: item.videoUrl,
+                        })
+                      }
                     >
                       <div className="aspect-[4/3] relative">
                         <video
@@ -316,7 +340,7 @@ export default function GalleryPage() {
                           muted
                           playsInline
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-orange-900/80 via-yellow-800/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
+                        <div className="absolute inset-0 bg-gradient-to-t from-terracotta-900/80 via-saffron-800/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
                           <div className="absolute bottom-0 left-0 right-0 p-4">
                             <p className="text-white font-bold text-xl">{item.title}</p>
                           </div>
@@ -331,12 +355,13 @@ export default function GalleryPage() {
 
         {/* Lightbox */}
         <AnimatePresence>
-          {selectedImage && (
+          {selectedMedia && (
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               className="fixed inset-0 bg-black/90 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+              onClick={() => setSelectedMedia(null)}
             >
               <motion.div
                 className="relative max-w-4xl w-full"
@@ -344,40 +369,35 @@ export default function GalleryPage() {
                 animate={{ scale: 1, y: 0 }}
                 exit={{ scale: 0.9, y: 20 }}
                 transition={{ type: "spring", damping: 25 }}
+                onClick={(e) => e.stopPropagation()}
               >
                 <Button
                   variant="ghost"
                   size="icon"
                   className="absolute -top-12 right-0 text-white hover:bg-white/10 z-10"
-                  onClick={() => setSelectedImage(null)}
+                  onClick={() => setSelectedMedia(null)}
                 >
                   <X className="h-6 w-6" />
                   <span className="sr-only">Close</span>
                 </Button>
 
-                {selectedImage.type === "image" ? (
+                {selectedMedia.type === "image" ? (
                   <div className="relative aspect-video rounded-xl overflow-hidden border-4 border-white/20 shadow-2xl">
                     <Image
-                      src={selectedImage.src || "/placeholder.svg"}
-                      alt={selectedImage.title}
+                      src={selectedMedia.src || "/placeholder.svg"}
+                      alt={selectedMedia.title}
                       fill
                       className="object-contain"
                     />
                   </div>
                 ) : (
-                  <div className="relative aspect-video bg-gradient-to-br from-purple-900 to-red-900 flex flex-col items-center justify-center rounded-xl overflow-hidden border-4 border-white/20 shadow-2xl">
-                    <div className="w-24 h-24 rounded-full bg-white/20 flex items-center justify-center mb-4">
-                      <div className="w-0 h-0 border-t-12 border-t-transparent border-l-24 border-l-white border-b-12 border-b-transparent ml-2"></div>
-                    </div>
-                    <p className="text-white text-center text-2xl font-bold">{selectedImage.title}</p>
-                    <p className="text-white/80 text-center mt-2">
-                      (In a real implementation, this would be a video player)
-                    </p>
+                  <div className="relative aspect-video rounded-xl overflow-hidden border-4 border-white/20 shadow-2xl">
+                    <video src={selectedMedia.videoUrl} className="w-full h-full object-contain" controls autoPlay />
                   </div>
                 )}
 
                 <div className="mt-6 bg-white/10 backdrop-blur-md rounded-xl p-4">
-                  <h3 className="text-white text-2xl font-bold">{selectedImage.title}</h3>
+                  <h3 className="text-white text-2xl font-bold">{selectedMedia.title}</h3>
                 </div>
               </motion.div>
             </motion.div>
@@ -385,9 +405,9 @@ export default function GalleryPage() {
         </AnimatePresence>
 
         {/* Decorative elements */}
-        <div className="absolute top-1/4 left-10 w-64 h-64 bg-purple-500 rounded-full opacity-5 blur-3xl -z-10"></div>
-        <div className="absolute bottom-1/4 right-10 w-64 h-64 bg-pink-500 rounded-full opacity-5 blur-3xl -z-10"></div>
-        <div className="absolute top-3/4 left-1/3 w-64 h-64 bg-red-500 rounded-full opacity-5 blur-3xl -z-10"></div>
+        <div className="absolute top-1/4 left-10 w-64 h-64 bg-saffron-500 rounded-full opacity-5 blur-3xl -z-10"></div>
+        <div className="absolute bottom-1/4 right-10 w-64 h-64 bg-terracotta-500 rounded-full opacity-5 blur-3xl -z-10"></div>
+        <div className="absolute top-3/4 left-1/3 w-64 h-64 bg-cream-500 rounded-full opacity-5 blur-3xl -z-10"></div>
       </div>
     </div>
   )

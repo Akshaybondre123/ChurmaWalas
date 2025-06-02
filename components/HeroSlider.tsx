@@ -96,14 +96,14 @@ export default function HeroSlider() {
                   index === currentSlide ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0",
                 )}
               >
-                <h2 className="text-rose-400 text-xl md:text-2xl font-medium mb-4 tracking-wider">{slide.subtitle}</h2>
+                <h2 className="text-cream-400 text-xl md:text-2xl font-medium mb-4 tracking-wider">{slide.subtitle}</h2>
                 <h1 className="text-4xl md:text-7xl font-bold text-white mb-6 font-serif">{slide.title}</h1>
                 <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-3xl mx-auto">{slide.description}</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button
                     asChild
                     size="lg"
-                    className="bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 text-white px-8 py-6 rounded-full text-lg shadow-lg"
+                    className="bg-gradient-to-r from-saffron-500 to-terracotta-500 hover:from-saffron-600 hover:to-terracotta-600 text-white px-8 py-6 rounded-full text-lg shadow-lg"
                   >
                     <Link href="/menu">View Our Menu</Link>
                   </Button>
@@ -111,7 +111,7 @@ export default function HeroSlider() {
   asChild
   size="lg"
   variant="outline"
-  className="bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 text-white px-8 py-6 rounded-full text-lg shadow-lg"
+  className="bg-gradient-to-r from-saffron-500 to-terracotta-500 hover:from-saffron-600 hover:to-terracotta-600 text-white px-8 py-6 rounded-full text-lg shadow-lg"
 >
   <Link href="/contact#book">Book A Table</Link>
 </Button>
