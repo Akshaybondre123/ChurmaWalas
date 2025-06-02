@@ -202,7 +202,7 @@ export default function Navbar() {
         animate="open"
         exit="closed"
         variants={menuVariants}
-        className="fixed top-[60px] left-4 right-4 z-40 bg-gradient-to-br from-rose-900 to-amber-900 rounded-xl shadow-2xl overflow-hidden md:hidden"
+      className="fixed top-[60px] left-4 right-4 z-40 bg-[#6b8142] rounded-xl shadow-2xl overflow-hidden md:hidden"
       >
         <motion.nav className="flex flex-col items-center gap-2 p-6">
           {navLinks.map((link, index) => (
